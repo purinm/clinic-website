@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <meta charset="utf-8" />
+  <meta rel="stylesheet2" href="style2.css">
+
+  <style>
+    body {
+     margin: 0 auto;
+     padding:0;
+      width:500px;
+      text-align: center;
+    }
+
+    h1{
+    margin-top: 50px;
+    margin-bottom: 0;
+    }
+    .info{
+      /* display: block; */
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100px;
+  
+   }
+   p{
+     margin: 0 ;
+     margin-top: 20px;
+   }
+   .hf{
+     font-size: 10px;
+     color:red;
+     margin-top: 2px;
+     
+   }
+   .btn{
+     width: 100px;
+     height: 50px;
+     cursor:pointer;
+     background-color:skyblue;
+     color: snow;
+     text-align: center;
+     border-radius: 10px;
+     border-style: none;
+     margin-top: 50px;
+     outline: none;
+     
+   }
+
+  .btn:hover{
+    opacity: 0.8;
+  }
+  a{
+    color:snow ;
+    text-decoration-line: none;
+  
+  }
+
+
+  }
+
+  </style>
+
+  <head>
+    <body>
+      <h1>Login form</h1>
+      <div class="info">
+      <p>予約サイトへのログインへ進むために、メールアドレスにて登録をお願いします。尚、今回と登録いただくメールアドレス・パスワードは登録後の次回ログイン時にも必要になります。
+      </p>
+      </div>
+
+      <form name="mydata"  method="post 形式名">  
+        <!-- action="process.php 送信先ファイル名" -->
+      <p>
+        <label>
+          Username
+          <input type="text" size="12"placeholder="Yamada" />
+          <input type="text"  size="12"placeholder="Taro"
+        /></label>
+      </p>
+      <p>
+        <label>
+         Mail address
+          <input type="email" />
+        </label>
+
+        <label for="account"></label>
+          <select id="account">
+          <option selected>@gmail.com</option>
+          <option>@yahoo.com</option>
+          <option>@softbank.jp</option>
+          <option>@docomo.jp</option>
+          <option>その他</option>
+          </select>
+        </label>
+      </p>
+      <p class="hf">*その他の場合、＠以降もすべて入力してください。</p>
+      <p>Phone number<input type="number"></p>
+      <p class="hf">ハイフンの入力は不要です。</p>
+     
+      <p>
+        <label> Password <input type="password" id="password" value="purinpurin"/></label>
+      </p>
+      <input type="checkbox" id="password-check">
+      パスワードを表示する
+      <p>
+       <label> Password* <input type="password" /></label>
+      </p>
+      <p class="hf">*確認のためもう一度同じパスワードを入力してください。</p> 
+
+      <p>当院からお知らせDM受け取りを希望されますか？</p>
+      <label><input type="radio" name="dm">希望する</label>
+      <label><input type="radio" name="dm">希望しない</label>
+
+      <div class="btns">
+      <button class="btn" ><a href="file:///C:/Users/maaai/OneDrive/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/Tab%20practice%20%E3%81%BE%E3%81%A3%E3%81%9F%E3%82%93%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF/index.html">戻る</a></button>
+      <button type="submit" class="btn" id="submit">登録</button>
+      <div>
+     </form> 
+
+      
+
+     
+
+      <!-- <fieldset>
+        <legend>一番好きなスマホ</legend>
+        <label> <input type="radio" name="phone" />Android</label>
+        <label> <input type="radio" name="phone" checked />iPhone</label>
+        <label> <input type="radio" name="phone" />その他</label>
+      </fieldset>
+
+      <p>
+        <label for="feeling">満足度</label>
+        <select id="feeling">
+          <option>1</option>
+          <option>2</option>
+          <option selected>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+        </select>
+      </p> -->
+
+      <script src="../Tab practice まったんクリニック/js2/main2.js"></script>
+    </body>
+  </head>
+</html>
