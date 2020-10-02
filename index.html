@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>まったんクリニック</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <style>
+      .cover {
+        background: center/cover url(img/sea.jpeg);
+        height: 400px;
+        padding: 0;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div
+        class="alert alert-info text-center mb-0 rounded-0 alert-dismissile fade show"
+      >
+        News! News! News! News! News!
+        <button class="close" data-dismiss="alert">&times;</button>
+      </div>
+      <section>
+        <div class="navtop">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">メニュー</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#"
+                    >医師紹介 <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">診療案内</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">アクセス</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <div class="cover text-white text-center py-5">
+          <h1 class="display-4 mb-4">まったんクリニック</h1>
+          <a
+            href="file:///C:/Users/maaai/OneDrive/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/Tab%20practice%20%E3%81%BE%E3%81%A3%E3%81%9F%E3%82%93%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF/index3.html?#"
+            class="btn btn-primary btn-lg"
+            >予約する</a
+          >
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="py-5">
+        <h2 class="text-center mb-5">お知らせ</h2>
+        <div class="container">
+          <div class="mb-5 text-center row">
+            <div class="col-sm-8">
+              <h3>新型コロナウイルスについて</h3>
+              <p>流行中の新型コロナウイルスに対する当院の感染予防策</p>
+            </div>
+            <div class="col-sm-4 flex">
+              <img src="img/コロナ.jfif" class="w-100" id="btn" />
+            </div>
+          </div>
+
+          <div class="text-center row">
+            <div class="col-sm-8 order-sm-2">
+              <h3>感染予防対策にご協力ください</h3>
+              <p>検温・室内換気・手指消毒 マスク着用・ソーシャルディスタンス</p>
+            </div>
+            <div class="col-sm-4 order-sm-1">
+              <img src="img/せきエチケット.jfif" class="w-100" id="btn" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="a">
+        <div id="popup" class="hidden">
+          <img src="img/コロナ.jfif" />
+        </div>
+        <div id="popup" class="hidden">
+          <img src="img/せきエチケット.jfif" width="300px" height="250px" />
+        </div>
+      </section>
+
+      <div class="container mt-2">
+        <ul class="menu">
+          <li><a href="#" class="active" data-id="about">病院概要</a></li>
+          <li><a href="#" data-id="subject">診療科</a></li>
+          <li><a href="#" data-id="address">アクセス</a></li>
+          <li><a href="#" data-id="appointment">予約</a></li>
+        </ul>
+
+        <section class="content active" id="about">開業５年 目です。</section>
+        <section class="content" id="subject">
+          内科、アレルギー科
+          <table class="table">
+            <thead>
+              <tr>
+                <th>‐</th>
+                <th>日</th>
+                <th>月</th>
+                <th>火</th>
+                <th>水</th>
+                <th>木</th>
+                <th>金</th>
+                <th>土</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>9:00~12:00</td>
+                <td>‐</td>
+                <td>鈴木</td>
+                <td>岡田</td>
+                <td>岡田</td>
+                <td>‐</td>
+                <td>岡田</td>
+                <td>岡田</td>
+              </tr>
+              <tr>
+                <td>13:00-17:00</td>
+                <td>‐</td>
+                <td>鈴木</td>
+                <td>岡田</td>
+                <td>鈴木</td>
+                <td>‐</td>
+                <td>岡田</td>
+                <td>鈴木</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="content" id="address">
+          〇〇駅から徒歩５分。マップでみる
+        </section>
+        <section class="content" id="appointment">
+          予約・お問い合わせはこちらから
+          <ul>
+            <li>電話番号：000-0000-0000</li>
+            <li><a href="#">予約サイトへ</a></li>
+            <li>受付時間：9:00~18:00</li>
+            <li>休診日：木曜日、日曜日</li>
+          </ul>
+        </section>
+      </div>
+
+      <section class="bg-light text-center py-5">
+        <a
+          href=file:///C:/Users/maaai/OneDrive/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/Tab%20practice%20%E3%81%BE%E3%81%A3%E3%81%9F%E3%82%93%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF/index3.html?#
+          class="btn btn-primary btn-lg"
+          >予約する</a
+        >
+      </section>
+    </main>
+
+    <footer class="text-center text-muted py-4">
+      お問い合わせ/ 電話番号：000-0000-0000 / メール：・・・・・com
+    </footer>
+
+    <script src="js/main.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+html {
+  width: 100%;
+}
+
+body {
+  font-size: 16px;
+  position: relative;
+}
+
+/* header {
+  
+} */
+
+/* .alert {
+  display: block;
+  height: 100px;
+  margin: 0 auto;
+} */
+
+/* @media (min-width: 375px) {
+  header > section {
+    flex-direction: column;
+  }
+  .navtop {
+    width: 100px;
+  }
+  .cover {
+    flex: 1;
+  }
+}
+
+@media (min-width: 800px) {
+} */
+
+.a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.w-100:hover {
+  cursor: zoom-in;
+}
+
+#popup.hidden {
+  display: none;
+}
+#popup {
+  position: absolute;
+}
+
+#popup > img {
+  transform: scale(1.2, 1.2);
+  width: 450px;
+  height: 300px;
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  box-shadow: 3px 4px rgb(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 0;
+  color: brown;
+}
+
+.menu li a:not(.active):hover {
+  opacity: 0.5;
+  transition: opacity 0.4s;
+}
+
+.menu li a.active {
+  background: rgb(245, 234, 188);
+  color: brown;
+  border-radius: 4px 4px 0 0;
+}
+.content.active {
+  background: rgb(245, 234, 188);
+  color: brown;
+  border-radius: 0 0 4px 4px;
+  display: block;
+  min-height: 150px;
+  padding: 20px;
+}
+
+.content {
+  display: none;
+}
+
+.table {
+  text-align: center;
+  width: 440px;
+  height: 120px;
+  border: clapse;
+}
+
+.table th {
+  border: solid brown 1px;
+  padding: 5px;
+}
+.table td {
+  border: solid brown 1px;
+  padding: 5px;
+}
+
+.table thead th:nth-child(2) {
+  color: red;
+}
+.table thead th:last-child {
+  color: blue;
+}
