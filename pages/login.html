@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta />
+    <title>Sign in</title>
+  </head>
+  <style>
+        
+    header{
+      height: 100px;
+    }
+    body {
+      margin: 0 auto;
+      background-color: rgb(166, 219, 217);
+      display: flex;
+      min-height: 100%;
+      font-family: 'Varela Round', sans-serif;
+      
+    }
+    .container {
+      margin-top: 100px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 400px;
+      height: 400px;
+      background: snow;
+      border-radius: 30px;
+      justify-content:center ;   
+      transition:1s; 
+      user-select: none;  
+    }
+
+     h1 {
+      color: snow;
+      width: 370px;
+      height: 80px;
+      background-color: lightseagreen;
+      border-radius: 20px 20px 0 0;
+      padding:0;
+      margin: 0 ;
+      padding-left:30px;
+      display: flex;
+    }
+
+    .hspan{
+      align-self:flex-end;
+    }
+
+    fieldset{
+      border: none;
+      padding: 10px 10px 30px 30px;
+    }
+
+    input {
+      padding:0;
+      margin:0;
+      background: transparent; 
+      border: none; 
+      outline: none;
+      } 
+
+    p{
+      font-size: 18px;
+    }
+
+    p:nth-of-type(even) {
+      background-color: rgb(230, 230, 230);
+      border-radius: 4px;
+      padding-left:4px ;
+      
+      
+    }
+
+    p >input:last-child {
+      cursor: pointer;
+      padding:10px 20px;
+      border-radius: 5px;
+      color: snow;
+      background-color: lightseagreen;
+      outline: none;
+      box-shadow: 0 1px 5px rgba(0,0,0, .1);
+      transition: opacity 0.3s;
+    }
+    p >input:last-child:hover{
+      opacity: 0.7;
+      
+    }
+
+
+    
+    
+  </style>
+
+  <body>
+    <header></header>
+
+    <div class="container">
+      
+        <h1><span class="hspan">Sign In</span></h1>
+        
+     <fieldset>
+     <form action="#" ,method="POST">
+        <p>E-mail address</p>
+        <p>
+          <label for="email"
+            ><input type="email" id="email" placeholder="xxx@xx.com" size="45"
+          /></label>
+        </p>
+        <p>Password</p>
+        <p>
+          <label for="password">
+            <input type="password" id="password"placeholder="英数字4文字以上" size="45">
+          </label>
+        </p>
+       <p><input type="submit" value="Sign In"></p>
+          <a href="signup.html"><p>初めての方へ</p></a>
+          
+      </form>
+      </fierldset> 
+    </div> 
+  </body>
+</html>
