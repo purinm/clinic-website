@@ -1,0 +1,70 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+table {
+  border: 2px solid rgb(166, 219, 217);
+  border-collapse: collapse;
+  text-align: center;
+  margin: 0 auto;
+}
+
+thead,
+tfoot {
+  background: rgb(166, 219, 217);
+}
+
+th,
+td {
+  padding: 5px;
+}
+thead tr:last-child > th:first-child {
+  color: red;
+}
+thead tr:last-child > th:last-child {
+  color: blue;
+}
+
+tbody td:first-child {
+  color: red;
+  background: lightseagreen;
+}
+
+tbody td:last-child {
+  color: blue;
+}
+tbody td:nth-child(4) {
+  background: lightseagreen;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+td.today {
+  font-weight: bold;
+}
+
+td.disabled {
+  opacity: 0.2;
+}
+
+#prev,
+#next,
+#today {
+  cursor: pointer;
+  user-select: none;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+.calendar li::before {
+  content: "■";
+  color: lightseagreen;
+}
+
+p {
+  font-size: 18px;
+}
