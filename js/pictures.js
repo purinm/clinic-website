@@ -2,20 +2,18 @@
 {
   // 画像の配列images を作る
   const images = [
-    "../img/受付.jpg",
-    "../img/待合室.jpeg",
-    "../img/診察室.jpg",
-    "../img/処置室.jpg",
-    "../img/kidsroom.jpg",
+    //   "../img/受付.jpg",
+    //   "../img/待合室.jpeg",
+    //   "../img/診察室.jpg",
+    //   "../img/処置室.jpg",
+    //   "../img/kidsroom.jpg",
+    // ];
+    { image: "../img/受付.jpg", text: "受付" },
+    { image: "../img/待合室.jpeg", text: "待合室" },
+    { image: "../img/診察室.jpg", text: "診察室" },
+    { image: "../img/処置室.jpg", text: "処置室" },
+    { image: "../img/kidsroom.jpg", text: "キッズルーム" },
   ];
-  //   { image: "../img/受付.jpg", text: "受付" },
-  //   { image: "../img/待合室.jpeg", text: "待合室" },
-  //   { image: "../img/診察室.jpg", text: "診察室" },
-  //   { image: "../img/処置室.jpg", text: "処置室" },
-  //   { image: "../img/kidsroom.jpg", text: "キッズルーム" },
-  // ];
-
-  // const texts = Object.keys(images);
 
   let currentIndex = 0;
 
@@ -26,11 +24,11 @@
 
   // main 要素をidから取得し、メイン画像をmainImageと定義
   // currentIndex番目の画像を、メイン画像に入れる
-
-  // texts.forEach(() => {
-  //   const p = document.querySelector("p");
-  //   p.textContent = images[currentIndex].text;
-  // });
+  const texts = Object.keys(images);
+  const p = document.querySelector("p");
+  texts.forEach(() => {
+    p.textContent = images[currentIndex].text;
+  });
 
   // それぞれの画像(画像、〇番目がわかるようにしてある)にループを回す
   images.forEach(function (image, index) {
@@ -126,4 +124,7 @@
     isPlaying = !isPlaying;
     // trueになる
   });
+}
+function newFunction(images) {
+  return Object.keys(images);
 }
